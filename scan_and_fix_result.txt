@@ -1,0 +1,489 @@
+PS D:\nagya\OneDrive - Slovenská technická univerzita v Bratislave\5 rocnik\LS\BVI\BVI> ./scan_and_fix.ps1
+[*] Running Nmap scan on localhost:8080...
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-04-11 13:12 Central Europe Daylight Time
+NSE: Loaded 180 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 13:12
+Completed NSE at 13:12, 0.00s elapsed
+Initiating NSE at 13:12
+Completed NSE at 13:12, 0.00s elapsed
+Pre-scan script results:
+|_http-robtex-shared-ns: *TEMPORARILY DISABLED* due to changes in Robtex's API. See https://www.robtex.com/api/
+Initiating SYN Stealth Scan at 13:12
+Scanning localhost (127.0.0.1) [1 port]
+Discovered open port 8080/tcp on 127.0.0.1
+Completed SYN Stealth Scan at 13:12, 0.01s elapsed (1 total ports)
+Initiating Service scan at 13:12
+Scanning 1 service on localhost (127.0.0.1)
+Completed Service scan at 13:12, 6.04s elapsed (1 service on 1 host)
+Initiating OS detection (try #1) against localhost (127.0.0.1)
+NSE: Script scanning 127.0.0.1.
+Initiating NSE at 13:12
+NSE Timing: About 15.70% done; ETC: 13:15 (0:02:46 remaining)
+NSE Timing: About 15.70% done; ETC: 13:18 (0:05:28 remaining)
+NSE Timing: About 15.93% done; ETC: 13:21 (0:08:00 remaining)
+PS D:\nagya\OneDrive - Slovenská technická univerzita v Bratislave\5 rocnik\LS\BVI\BVI> ./scan_and_fix.ps1
+[*] Running Nmap scan on localhost:8080...
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-04-11 13:14 Central Europe Daylight Time
+NSE: Loaded 180 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 13:14
+Completed NSE at 13:14, 0.00s elapsed
+Initiating NSE at 13:14
+Completed NSE at 13:14, 0.00s elapsed
+Pre-scan script results:
+|_http-robtex-shared-ns: *TEMPORARILY DISABLED* due to changes in Robtex's API. See https://www.robtex.com/api/
+Initiating SYN Stealth Scan at 13:14
+Scanning localhost (127.0.0.1) [1 port]
+Discovered open port 8080/tcp on 127.0.0.1
+Completed SYN Stealth Scan at 13:14, 0.01s elapsed (1 total ports)
+Initiating Service scan at 13:14
+Scanning 1 service on localhost (127.0.0.1)
+Completed Service scan at 13:14, 6.06s elapsed (1 service on 1 host)
+Initiating OS detection (try #1) against localhost (127.0.0.1)
+NSE: Script scanning 127.0.0.1.
+Initiating NSE at 13:14
+NSE Timing: About 11.67% done; ETC: 13:18 (0:03:55 remaining)
+NSE Timing: About 11.67% done; ETC: 13:23 (0:07:42 remaining)
+NSE Timing: About 11.90% done; ETC: 13:27 (0:11:14 remaining)
+NSE Timing: About 11.90% done; ETC: 13:31 (0:14:56 remaining)
+NSE Timing: About 11.90% done; ETC: 13:35 (0:18:38 remaining)
+NSE Timing: About 11.90% done; ETC: 13:39 (0:22:20 remaining)
+NSE Timing: About 12.99% done; ETC: 13:41 (0:23:53 remaining)
+NSE Timing: About 13.13% done; ETC: 13:45 (0:26:55 remaining)
+NSE Timing: About 13.26% done; ETC: 13:48 (0:29:53 remaining)
+NSE Timing: About 13.26% done; ETC: 13:52 (0:33:09 remaining)
+NSE Timing: About 13.26% done; ETC: 13:56 (0:36:25 remaining)
+NSE Timing: About 13.26% done; ETC: 14:00 (0:39:42 remaining)
+NSE Timing: About 13.26% done; ETC: 14:03 (0:42:58 remaining)
+NSE Timing: About 14.53% done; ETC: 14:07 (0:45:40 remaining)
+NSE Timing: About 14.60% done; ETC: 14:11 (0:48:22 remaining)
+NSE Timing: About 14.60% done; ETC: 14:14 (0:51:17 remaining)
+NSE Timing: About 14.60% done; ETC: 14:18 (0:54:30 remaining)
+NSE Timing: About 14.60% done; ETC: 14:22 (0:57:44 remaining)
+NSE Timing: About 15.92% done; ETC: 14:27 (1:01:21 remaining)
+NSE Timing: About 15.92% done; ETC: 14:31 (1:05:03 remaining)
+NSE Timing: About 15.92% done; ETC: 14:36 (1:09:01 remaining)
+NSE Timing: About 17.74% done; ETC: 14:43 (1:13:20 remaining)
+NSE Timing: About 19.01% done; ETC: 14:50 (1:17:49 remaining)
+NSE Timing: About 19.01% done; ETC: 14:56 (1:22:43 remaining)
+NSE Timing: About 20.26% done; ETC: 15:04 (1:28:01 remaining)
+NSE Timing: About 21.50% done; ETC: 15:13 (1:33:33 remaining)
+NSE Timing: About 22.71% done; ETC: 15:23 (1:39:36 remaining)
+NSE Timing: About 36.05% done; ETC: 14:37 (0:53:20 remaining)
+Completed NSE at 14:48, 5633.54s elapsed
+Initiating NSE at 14:48
+Completed NSE at 14:48, 0.04s elapsed
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00054s latency).
+
+Bug in http-security-headers: no string output.
+PORT     STATE SERVICE VERSION
+8080/tcp open  http    Apache httpd 2.4.63 ((Win64))
+| http-useragent-tester:
+|   Status for browser useragent: 200
+|   Allowed User Agents:
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+| http-brute:
+|_  Path "/" does not require authentication
+|_http-fetch: Please enter the complete path of the directory to save data in.
+| http-fileupload-exploiter:
+|
+|     Failed to upload and execute a payload.
+|
+|     Failed to upload and execute a payload.
+|
+|     Failed to upload and execute a payload.
+|
+|     Failed to upload and execute a payload.
+|
+|     Failed to upload and execute a payload.
+|
+|     Failed to upload and execute a payload.
+|
+|     Failed to upload and execute a payload.
+|
+|     Failed to upload and execute a payload.
+|
+|     Failed to upload and execute a payload.
+|
+|     Failed to upload and execute a payload.
+|
+|_    Failed to upload and execute a payload.
+|_http-server-header: Apache/2.4.63 (Win64)
+| http-check-gitdir: [VULNERABLE] Exposed .git directory detected!
+| URL: /.git/HEAD
+|_Response: ref: refs/heads/main
+|_http-litespeed-sourcecode-download: Request with null byte did not work. This web server might not be vulnerable
+| http-php-version: Logo query returned unknown hash f8c064dd9c20d5c85082c1f3e47b7910
+|_Credits query returned unknown hash f8c064dd9c20d5c85082c1f3e47b7910
+|_http-malware-host: Host appears to be clean
+|_http-xssed: No previously reported XSS vuln.
+| http-git:
+|   127.0.0.1:8080/.git/
+|_    Potential Git repository found (found 1/6 expected files)
+| http-enum:
+|_  /.git/HEAD: Git folder
+|_http-date: Fri, 11 Apr 2025 11:14:26 GMT; 0s from local time.
+| http-trace: TRACE is enabled
+| Headers:
+| Date: Fri, 11 Apr 2025 11:44:33 GMT
+| Server: Apache/2.4.63 (Win64)
+| Connection: close
+| Transfer-Encoding: chunked
+|_Content-Type: message/http
+| http-headers:
+|   Date: Fri, 11 Apr 2025 11:14:27 GMT
+|   Server: Apache/2.4.63 (Win64)
+|   Last-Modified: Mon, 31 Mar 2025 15:03:45 GMT
+|   ETag: "10bb-631a4ba017a51"
+|   Accept-Ranges: bytes
+|   Content-Length: 4283
+|   Connection: close
+|   Content-Type: text/html
+|
+|_  (Request type: HEAD)
+|_http-slowloris: false
+| http-slowloris-check:
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|
+|     Disclosure date: 2009-09-17
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_      http://ha.ckers.org/slowloris/
+| http-methods:
+|   Supported Methods: OPTIONS HEAD GET POST TRACE
+|_  Potentially risky methods: TRACE
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+|_http-title: BVI Website of Andr\xC3\xA1s
+|_http-feed: Couldn't find any feeds.
+|_http-wordpress-enum: Nothing found amongst the top 100 resources,use --script-args search-limit=<number|all> for deeper analysis)
+|_http-drupal-enum: Nothing found amongst the top 100 resources,use --script-args number=<number|all> for deeper analysis)
+| http-csrf:
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=localhost
+|   Found the following possible CSRF vulnerabilities:
+|
+|     Path: http://localhost:8080/
+|     Form id:
+|     Form action: /search
+|
+|     Path: http://localhost:8080/
+|     Form id:
+|     Form action: /submit
+|
+|     Path: http://localhost:8080/
+|     Form id:
+|     Form action: /upload
+|
+|     Path: http://localhost:8080/
+|     Form id:
+|_    Form action: /redirect
+|_http-comments-displayer: Couldn't find any comments.
+|_http-devframework: Couldn't determine the underlying framework or CMS. Try increasing 'httpspider.maxpagecount' value to spider more pages.
+| http-vhosts:
+|_128 names had status 200
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+|_http-mobileversion-checker: No mobile version detected.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-errors:
+| Spidering limited to: maxpagecount=40; withinhost=localhost
+|   Found the following error pages:
+|
+|   Error Code: 404
+|       http://localhost:8080/config.json
+|
+|   Error Code: 404
+|       http://localhost:8080/upload
+|
+|   Error Code: 404
+|       http://localhost:8080/submit
+|
+|   Error Code: 404
+|       http://localhost:8080/search
+|
+|   Error Code: 404
+|       http://localhost:8080/admin
+|
+|   Error Code: 404
+|       http://localhost:8080/login.html
+|
+|   Error Code: 404
+|       http://localhost:8080/redirect
+|
+|   Error Code: 404
+|       http://localhost:8080/files.html
+|
+|   Error Code: 404
+|_      http://localhost:8080/.git/config
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+| http-sitemap-generator:
+|   Directory structure:
+|     /
+|       Other: 1
+|     /.git/
+|       Other: 1
+|   Longest directory structure:
+|     Depth: 1
+|     Dir: /.git/
+|   Total files found (by extension):
+|_    Other: 2
+|_http-chrono: Request times for /; avg: 119.00ms; min: 98.00ms; max: 139.00ms
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Microsoft Windows 10|11
+OS CPE: cpe:/o:microsoft:windows_10 cpe:/o:microsoft:windows_11
+OS details: Microsoft Windows 10 1607 - 11 23H2
+Uptime guess: 0.185 days (since Fri Apr 11 10:21:23 2025)
+Network Distance: 0 hops
+TCP Sequence Prediction: Difficulty=258 (Good luck!)
+IP ID Sequence Generation: Incremental
+
+NSE: Script Post-scanning.
+Initiating NSE at 14:48
+Completed NSE at 14:48, 0.00s elapsed
+Initiating NSE at 14:48
+Completed NSE at 14:48, 0.00s elapsed
+Read data files from: C:\Program Files (x86)\Nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 5641.43 seconds
+           Raw packets sent: 17 (1.462KB) | Rcvd: 42 (3.170KB)
+[*] Parsing Nmap output...
+[!] TRACE method detected. Disabling...
+[+] TRACE method disabled.
+[!] .git exposure detected. Blocking...
+[+] .git access blocked.
+[!] Missing security headers. Adding basic headers...
+[+] Basic security headers added.
+[!] Server version exposed. Hiding banner...
+[+] ServerTokens set to Prod.
+[+] ServerSignature set to Off.
+[!] Bad user-agents accepted. Blocking 'BadBot'...
+[+] Blocked 'BadBot' user-agent.
+[*] Restarting Apache...
+Apache restarted successfully.
+
+[*] Summary of fixes:
+[+] # Nmap 7.95 scan initiated Fri Apr 11 13:14:18 2025 as: "C:\\Program Files (x86)\\Nmap\\nmap.exe" -p 8080 --script http-* -T4 -A -v -oN nmap_output.txt 127.0.0.1
+Pre-scan script results:
+|_http-robtex-shared-ns: *TEMPORARILY DISABLED* due to changes in Robtex's API. See https://www.robtex.com/api/
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00054s latency).
+
+Bug in http-security-headers: no string output.
+PORT     STATE SERVICE VERSION
+8080/tcp open  http    Apache httpd 2.4.63 ((Win64))
+| http-useragent-tester:
+|   Status for browser useragent: 200
+|   Allowed User Agents:
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+| http-brute:
+|_  Path "/" does not require authentication
+|_http-fetch: Please enter the complete path of the directory to save data in.
+| http-fileupload-exploiter:
+|
+|     Failed to upload and execute a payload.
+|
+|     Failed to upload and execute a payload.
+|
+|     Failed to upload and execute a payload.
+|
+|     Failed to upload and execute a payload.
+|
+|     Failed to upload and execute a payload.
+|
+|     Failed to upload and execute a payload.
+|
+|     Failed to upload and execute a payload.
+|
+|     Failed to upload and execute a payload.
+|
+|     Failed to upload and execute a payload.
+|
+|     Failed to upload and execute a payload.
+|
+|_    Failed to upload and execute a payload.
+|_http-server-header: Apache/2.4.63 (Win64)
+| http-check-gitdir: [VULNERABLE] Exposed .git directory detected!
+| URL: /.git/HEAD
+|_Response: ref: refs/heads/main
+|_http-litespeed-sourcecode-download: Request with null byte did not work. This web server might not be vulnerable
+| http-php-version: Logo query returned unknown hash f8c064dd9c20d5c85082c1f3e47b7910
+|_Credits query returned unknown hash f8c064dd9c20d5c85082c1f3e47b7910
+|_http-malware-host: Host appears to be clean
+|_http-xssed: No previously reported XSS vuln.
+| http-git:
+|   127.0.0.1:8080/.git/
+|_    Potential Git repository found (found 1/6 expected files)
+| http-enum:
+|_  /.git/HEAD: Git folder
+|_http-date: Fri, 11 Apr 2025 11:14:26 GMT; 0s from local time.
+| http-trace: TRACE is enabled
+| Headers:
+| Date: Fri, 11 Apr 2025 11:44:33 GMT
+| Server: Apache/2.4.63 (Win64)
+| Connection: close
+| Transfer-Encoding: chunked
+|_Content-Type: message/http
+| http-headers:
+|   Date: Fri, 11 Apr 2025 11:14:27 GMT
+|   Server: Apache/2.4.63 (Win64)
+|   Last-Modified: Mon, 31 Mar 2025 15:03:45 GMT
+|   ETag: "10bb-631a4ba017a51"
+|   Accept-Ranges: bytes
+|   Content-Length: 4283
+|   Connection: close
+|   Content-Type: text/html
+|
+|_  (Request type: HEAD)
+|_http-slowloris: false
+| http-slowloris-check:
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|
+|     Disclosure date: 2009-09-17
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_      http://ha.ckers.org/slowloris/
+| http-methods:
+|   Supported Methods: OPTIONS HEAD GET POST TRACE
+|_  Potentially risky methods: TRACE
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+|_http-title: BVI Website of Andr\xC3\xA1s
+|_http-feed: Couldn't find any feeds.
+|_http-wordpress-enum: Nothing found amongst the top 100 resources,use --script-args search-limit=<number|all> for deeper analysis)
+|_http-drupal-enum: Nothing found amongst the top 100 resources,use --script-args number=<number|all> for deeper analysis)
+| http-csrf:
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=localhost
+|   Found the following possible CSRF vulnerabilities:
+|
+|     Path: http://localhost:8080/
+|     Form id:
+|     Form action: /search
+|
+|     Path: http://localhost:8080/
+|     Form id:
+|     Form action: /submit
+|
+|     Path: http://localhost:8080/
+|     Form id:
+|     Form action: /upload
+|
+|     Path: http://localhost:8080/
+|     Form id:
+|_    Form action: /redirect
+|_http-comments-displayer: Couldn't find any comments.
+|_http-devframework: Couldn't determine the underlying framework or CMS. Try increasing 'httpspider.maxpagecount' value to spider more pages.
+| http-vhosts:
+|_128 names had status 200
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+|_http-mobileversion-checker: No mobile version detected.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-errors:
+| Spidering limited to: maxpagecount=40; withinhost=localhost
+|   Found the following error pages:
+|
+|   Error Code: 404
+|       http://localhost:8080/config.json
+|
+|   Error Code: 404
+|       http://localhost:8080/upload
+|
+|   Error Code: 404
+|       http://localhost:8080/submit
+|
+|   Error Code: 404
+|       http://localhost:8080/search
+|
+|   Error Code: 404
+|       http://localhost:8080/admin
+|
+|   Error Code: 404
+|       http://localhost:8080/login.html
+|
+|   Error Code: 404
+|       http://localhost:8080/redirect
+|
+|   Error Code: 404
+|       http://localhost:8080/files.html
+|
+|   Error Code: 404
+|_      http://localhost:8080/.git/config
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+| http-sitemap-generator:
+|   Directory structure:
+|     /
+|       Other: 1
+|     /.git/
+|       Other: 1
+|   Longest directory structure:
+|     Depth: 1
+|     Dir: /.git/
+|   Total files found (by extension):
+|_    Other: 2
+|_http-chrono: Request times for /; avg: 119.00ms; min: 98.00ms; max: 139.00ms
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Microsoft Windows 10|11
+OS CPE: cpe:/o:microsoft:windows_10 cpe:/o:microsoft:windows_11
+OS details: Microsoft Windows 10 1607 - 11 23H2
+Uptime guess: 0.185 days (since Fri Apr 11 10:21:23 2025)
+Network Distance: 0 hops
+TCP Sequence Prediction: Difficulty=258 (Good luck!)
+IP ID Sequence Generation: Incremental
+
+Read data files from: C:\Program Files (x86)\Nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Apr 11 14:48:19 2025 -- 1 IP address (1 host up) scanned in 5641.43 seconds
+
+
+[*] Scan-and-fix routine complete. Re-run the Nmap scan to verify resolution.
+PS D:\nagya\OneDrive - Slovenská technická univerzita v Bratislave\5 rocnik\LS\BVI\BVI>
