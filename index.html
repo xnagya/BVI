@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BVI Website of András</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        section {
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-container button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to my BVI website</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="files.html">Files</a>
+    </nav>
+
+    <section>
+        <h2>Search Users</h2>
+        <form method="GET" action="/search">
+            <input type="text" name="user" placeholder="Enter username">
+            <button type="submit">Search</button>
+        </form>
+
+        <h2>Contact Form</h2>
+        <form class="form-container" method="POST" action="/submit">
+            <input type="text" name="name" placeholder="Your name">
+            <input type="email" name="email" placeholder="Your email">
+            <input type="text" name="message" placeholder="Your message">
+            <button type="submit">Send</button>
+        </form>
+
+        <h2>User Comment</h2>
+        <p>Your comment: <span id="comment"></span></p>
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            document.getElementById('comment').innerHTML = params.get('comment');
+        </script>
+
+        <p><a href="admin">Admin Panel (no authentication)</a></p>
+
+        <h2>Insecure File Upload</h2>
+        <form method="POST" action="/upload" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <button type="submit">Upload</button>
+        </form>
+
+        <h2>Open Redirect Vulnerability</h2>
+        <form method="GET" action="/redirect">
+            <input type="text" name="url" placeholder="Enter redirect URL">
+            <button type="submit">Redirect Me</button>
+        </form>
+
+        <h2>Sensitive Data Exposure</h2>
+        <p><a href="config.json">View Configuration (JSON)</a></p>
+
+        <h2>Developer Tools</h2>
+        <ul>
+            <li><a href="/.git/HEAD">.git/HEAD</a> — access to current Git branch (should be protected!)</li>
+            <li><a href="/.git/config">.git/config</a> — Git configuration file (if exposed)</li>
+        </ul>
+    </section>
+
+    <footer>
+        &copy; 2025 András's BVI Website
+    </footer>
+
+</body>
+
+</html>
